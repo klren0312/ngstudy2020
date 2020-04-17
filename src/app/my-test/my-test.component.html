@@ -1,0 +1,19 @@
+<p>my-test works!</p>
+
+<h1>this is you input</h1>
+<div [style.color]="isSpecial ? 'red' : 'green'">{{theInput}}</div>
+
+<input type="text" (keyup)="onKey($event)">
+<p>{{inputValue}}</p>
+
+<form [formGroup]="checkForm">
+  <div>
+    <label for="name">Name</label>
+    <input id="name" type="text" formControlName="name" />
+  </div>
+  <div>
+    <label for="address">Address</label>
+    <input id="address" type="text" formControlName="address" />
+  </div>
+  <button class="button" type="submit">Purchase</button>
+</form>
